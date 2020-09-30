@@ -1,33 +1,38 @@
-body{
+body {
     direction: rtl;
     font-family: yekan;
 }
-*{
+
+* {
     font-family: yekan;
     text-align: center;
 }
-.info_header_row
-{
+
+.info_header_row {
     background-color: #3B3B46;
     color: #f8f8f8;
-    font-size: 11pt;
-    
+    font-size: 10pt;
+
 }
-.info_icons_container
-{
+
+.info_icons_container {
     background-color: #3B3B46;
 }
-.engLangIcon{
+
+.engLangIcon {
     margin: 0 20px;
     outline: none;
 }
-.engLangIcon:hover{
-opacity: 0.8;
+
+.engLangIcon:hover {
+    opacity: 0.8;
 }
-.header_icons{
+
+.header_icons {
     font-size: 10pt;
 }
-.icons_circle{
+
+.icons_circle {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -36,36 +41,68 @@ opacity: 0.8;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color:white;
-    margin:0px 3px;
+    color: white;
+    margin: 0px 3px;
     transition: 0.2s linear;
 }
-.icons_circle:hover{
+
+.icons_circle:hover {
     background-color: #c9c9c9;
-    color:white;
+    color: white;
     text-decoration: none;
-    
+
 }
-.navbar-row{
+
+.navbar-row {
     background-color: #302F3D;
 
 }
-.navbar_ul{
-    list-style-type:none;
+
+.navbar_ul {
+    list-style-type: none;
     color: white;
-    margin:0;
+    margin: 0;
 }
-.navbar_ul li{
+
+.navbar_ul li {
     padding: 10px;
+    font-size: 10pt;
 }
-.navbar_inner_row{
+
+.navbar_parent_li:hover ul {
+    visibility: visible;
+    opacity: 1 !important;
+}
+.navbar_parent_li{
+    cursor: pointer;
+}
+.navbar_parent_li ul {
+
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    padding: 0px;
+    background-color: rgb(151, 12, 17);
+    list-style-type: none;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.navbar_parent_li ul li {
+    width: 250px;
+    text-align: start;
+}
+
+.navbar_inner_row {
     height: 100px;
     background-color: #302F3D;
 }
-.search_input{
+
+.search_input {
     text-align: start;
     text-indent: 10px;
-    border-radius:20px;
+    border-radius: 20px;
     width: 230px;
     height: 35px;
     background-color: #64636E;
@@ -73,204 +110,308 @@ opacity: 0.8;
     outline: none;
     color: white;
 }
-.search_input::placeholder
-{
+
+.search_input::placeholder {
     color: white;
 }
-.slidshow_row{
+
+.slidshow_row {
     background-color: #302F3D;
+    height: 85vh;
 }
-.slidshow_img_col{
-    height: 550px;
+
+.slidshow_img_col {
+    
     display: flex;
     align-items: flex-end;
-   
 }
-.slidshow_img{
-    width: 100%;
+.slidshow_img {
+    width:600px;
 }
-.slidshow_description_col{
+
+.slidshow_description_col {
     height: 600px;
-    color:white;
+    color: white;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
 
 }
-.slidshow_text_two{
+
+.slidshow_text_one {
+    font-size: 22pt;
+}
+
+.slidshow_text_two {
     font-weight: 600;
 }
-.slidshow_text_three{
+
+.slidshow_text_three {
     text-align: justify;
     color: rgb(201, 201, 201);
 }
-.slideshow_div
-{
-    
+
+.slideshow_div {}
+
+.slideshow_button_one {
+    padding: 9px 50px;
+    background-color: rgb(151, 12, 17);
+    color: white;
+    border-radius: 25px;
+    transition: 0.4s;
+    box-sizing: border-box;
+    border: 1px solid rgb(151, 12, 17);
 }
-.slideshow_button_one{
-    padding: 10px 60px;
-    background-color:rgb(151,12,17)  ;
-    color:white;
-    border-radius:25px;
+
+.slideshow_button_one:hover {
+    background-color: #302F3D;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
 }
-.slideshow_button_two{
-    padding: 10px 60px;
-    background-color:white;
-    color:black;
-    border-radius:25px;
+
+.slideshow_button_two {
+    padding: 10px 50px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    color: rgb(151, 12, 17);
+    transition: 0.2s ease-in;
+    box-sizing: border-box;
+    border: 1px solid white;
 }
-.about_container_row{
-    height:560px;
+
+.slideshow_button_two:hover {
+    background-color: #302F3D;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+
+}
+
+.about_container_row {
+    padding: 50px;
     background-color: #F2F2F2;
 }
-.about_description_text
-{
+
+.about_description_text {
     font-size: 11pt;
     text-align: center;
 }
-.inner_about_card_one
-{
-    background-color: rgb(151,12,17);
-    height: 280px;
+
+.inner_about_card_one {
+    background-color: rgb(151, 12, 17);
+    height: 320px;
     border-radius: 20px;
     padding: 100px !important;
 }
-.inner_about_card_one h2{
-    color:white;
-    font-size:20pt;
+.inner_about_card_one img{
+    margin-bottom: 20px;
 }
-.inner_about_card_one p{
+.inner_about_card_one h2 {
+    color: white;
+    font-size: 20pt;
+}
+
+.inner_about_card_one p {
     color: rgb(231, 231, 231);
     font-size: 12pt;
     text-align: start;
 }
-.inner_about_card
-{
+
+.inner_about_card {
     background-color: white;
-    height: 280px;
+    height: 320px;
     border-radius: 20px;
     padding: 100px !important;
 }
-.inner_about_card h2{
-    color:rgb(151,12,17);
-    font-size:20pt;
+.inner_about_card img {
+margin-bottom: 20px;
 }
-.inner_about_card p{
+.inner_about_card h2 {
+    color: rgb(151, 12, 17);
+    font-size: 20pt;
+}
+
+.inner_about_card p {
     color: rgb(161, 161, 161);
     font-size: 12pt;
     text-align: start;
 }
 
-.rotate_card_one
-{
-    background-color: black;
+.rotate_card_one {
+    background-color: #302F3D;
+    height: 340px;
+
+}
+
+.rotate_cards_innerdiv {
+    width: 100%;
+    height: 70%;
+
+}
+
+.rotate_card_one_text_one {
+    color: white;
+    font-size: 23px;
+}
+
+.rotate_card_one_text_one_img {
+    height: 10px;
+    width: 65px;
+
+}
+
+.rotate_card_one_text_two {
+    font-size: 11pt;
+    color: rgb(224, 224, 224)
+}
+
+.rotate_card_two {
+    background-color: rgb(151, 12, 17);
     height: 340px;
 }
-.rotate_card_two
-{
-    background-color: rgb(151,12,17);
-    height: 340px;
+
+.rotate_card_two_icon {
+    font-size: 44pt;
+    color: white;
 }
-.rotate_card_three{
+
+.rotate_card_two_text_one {
+    color: white;
+    font-size: 23px;
+}
+
+.rotate_card_two_text_two {
+    color: rgb(224, 224, 224);
+
+}
+
+.rotate_card_three {
     background-image: url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1.jpg?id=5842");
     height: 340px;
     background-size: cover;
 }
-.rotate_card_four{
-    background-image:url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1.jpg?id=5854");
+
+.rotate_card_four {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1.jpg?id=5854");
     height: 340px;
     background-size: cover;
 }
-.rotate_card_five{
+
+.rotate_card_five {
     height: 340px;
-    background-color: rgb(151,12,17);
+    background-color: rgb(151, 12, 17);
 }
-.rotate_card_six{
+
+.rotate_card_six {
     height: 340px;
-    background-image: url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA%DB%8C%D9%86%DA%AF.jpg?id=5859");    
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA%DB%8C%D9%86%DA%AF.jpg?id=5859");
     background-size: cover;
 }
-.rotate_card_seven{
+
+.rotate_card_seven {
     height: 340px;
-    background-color: black;
+    background-color: #302F3D;
 }
-.plans_container{
-    background-color: #F2F2F2 ;
-    height: 750px;
+
+.plans_container {
+    background-color: #F2F2F2;
+    padding: 60px;
 }
-.plan_first_text{
-font-size: 16px;
-color: #970c11;
-margin:0;
+
+.plan_first_text {
+    font-size: 16px;
+    color: #970c11;
+    margin: 0;
 }
-.plan_second_text
-{
+
+
+.plan_third_text {
+    color: rgb(150, 150, 150);
+}
+
+.plan_card {
+   
+    
 
 }
-.plan_third_text
-{
-color: rgb(150, 150, 150);
-}
-.plan_card{
-    height: 380px;
-  
-}
-.plan_card_img{
+
+.plan_card_img {
     border-radius: 50%;
-    border: 2px solid rgb(151,12,17) ;
+    border: 2px solid rgb(151, 12, 17);
 
 }
-.order_cards_row{
+
+.plan_cards_text_one {
+    font-size: 14pt;
+    margin: 15px 0px;
+
+}
+
+.plan_cards_text_two {
+    color: #939499;
+    text-align: justify;
+    
+}
+
+.order_cards_row {
     height: 260px;
     background-position: center;
     background-image: url("https://akam-ata.com/wp-content/uploads/2020/05/%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%DA%A9%D8%A7%D9%85-%D8%A2%D8%AA%D8%A7-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA%DB%8C%D9%86%DA%AF-%D9%88-%D9%81%D8%B1%D9%88%D8%B4-.jpg");
     background-size: cover;
 }
-.order_card_one{
-    
+
+.order_card_one {
+
     height: 260px;
 }
-.order_card_two{
+
+.order_card_two {
     background-color: black;
     height: 260px;
 }
-.order_card_three{
+
+.order_card_three {
 
     height: 260px;
 }
 
-.order_img{
-width: 65px;
+.order_img {
+    width: 65px;
 }
-.order_link{
+
+.order_link {
     padding: 10px 60px;
-    background-color:rgb(151,12,17)  ;
-    color:white;
-    border-radius:25px;
-    
+    background-color: rgb(151, 12, 17);
+    color: white;
+    border-radius: 25px;
+
 }
-.order_text{
+
+.order_text {
     font-size: 17pt;
-    color:white;
+    color: white;
 }
-.internalnews_row{
-    background-color: #F2F2F2 ;
+
+.internalnews_row {
+    background-color: #F2F2F2;
 }
-.businessMagazine_row{
-    height:800px;
+
+.businessMagazine_row {
+    height: 800px;
 }
 
 .swiper-container {
     width: 80%;
     height: 280px;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: white;
+    background: black;
     width: 280px;
     height: 280px;
 
@@ -287,80 +428,240 @@ width: 65px;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  
-.footer_container_row{
-    background-color: #302F3D;
-    color:white;
 }
-.footer_row_one p
+
+.slide_one {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/High-paying-jobs-Asia-1-473x473.png");
+    background-size: cover;
+}
+
+.slide_two {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/strategic-management-akam-ata-225x225.png");
+    background-size: cover;
+}
+
+.slide_three {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/medical-equipment-marketing-500x500.png");
+    background-size: cover;
+}
+
+.slide_four {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/best-marketing-company-iran-675x675.jpg");
+    background-size: cover;
+}
+
+.slide_five {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/marketing-and-branding-company-akam-ata-550x550.jpg");
+    background-size: cover;
+}
+
+.slide_six {
+    background-image: url("https://akam-ata.com/wp-content/uploads/2020/09/Yasha-Sazmad-Business-Card-2-708x708.jpg");
+    background-size: cover;
+}
+
+.swiper-slide-date {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper_month_text {
+    border-bottom: 2px solid rgb(151, 12, 17);
+    font-size: 11pt;
+    width: 60%;
+    margin: 0;
+    font-family: yekan;
+}
+
+.swiper_day_text {
+    margin: 0;
+}
+.swiper_slides_filterdiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 80%;
+    transition: 0.5s;
+    -webkit-box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
+-moz-box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
+box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
+}
+.swiper_slides_filterdiv:hover
 {
+    top: 25%;
+}
+.swiper-slide:hover .swiper_slides_filterdiv
+{
+    top: 25%;
+}
+.swiper_slides_filterdiv_title{
+    opacity: 1 !important;
+    font-size: 17pt;
+    color:white;
+    text-align: start;
+    padding-top: 10px;
+}
+.swiper_slides_filterdiv_text{
+    color: black;
+    text-align: start;
+}
+.footer_container_row {
+    background-color: #302F3D;
+    color: white;
+    padding: 70px 0 20px 0;
+}
+
+.footer_row_one p {
     text-align: right;
 }
-.
-.getManagement_link{
+
+.getManagement_link {
     padding: 10px 10px;
-    background-color:rgb(151,12,17)  ;
-    color:white;
+    background-color: rgb(151, 12, 17);
+    color: white;
     border-radius: 7px;
+
 }
-.showbusinessMagazine_link{
+
+.getManagement_link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.showbusinessMagazine_link {
     padding: 10px 60px;
-    background-color:rgb(151,12,17)  ;
-    color:white;
-    border-radius:25px;
-    
+    background-color: rgb(151, 12, 17);
+    color: white;
+    border-radius: 25px;
+
 }
-.footer_two_ul{
+.showpost_button{
+    padding: 10px 20px;
+    background-color: rgb(151, 12, 17);
+    color: white;
+    border-radius: 25px;
+    font-size: 10pt;
+}
+.showbusinessMagazine_link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_two_ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-.footer_two_ul li{
-    text-align: start;
-}
-.copyright_row
-{
-    border-top: 1px solid gainsboro;
-    height: 70px;
-}
-.copyright_row p
-{
-    font-size: 11pt !important;
-    margin: 0;
-}
-.copyright_row a{
-    padding: 5px 10px;
-    background-color:rgb(151,12,17)  ;
-    color:white;
-    border-radius:25px;
+    padding-right: 25px;
 }
 
-@font-face{
+.footer_two_ul li {
+    text-align: start;
+    color: white;
+    height: 30px;
+}
+
+.footer_two_ul li a {
+    text-align: start;
+    color: white;
+
+}
+
+.footer_two_ul li a:hover {
+    text-decoration: none;
+}
+
+.footer_row_one p {
+    color: rgb(187, 187, 187);
+    font-size: 11pt;
+}
+
+.footer_titles {
+    color: white !important;
+    font-size: 16pt !important;
+    text-align: start !important;
+}
+
+.footer_subtitles {
+    color: white !important;
+    font-size: 13pt !important;
+    margin: 0 !important;
+}
+
+.footer_yellowNumbers {
+    color: #ECDF00 !important;
+    font-size: 15pt !important;
+
+}
+
+.samandehi_text {
+    text-align: justify !important;
+}
+
+.servises_text {
+    text-align: justify !important;
+}
+
+.copyright_row {
+    border-top: 1px solid gainsboro;
+    height: 70px;
+
+}
+
+.copyright_row p {
+    font-size: 10pt !important;
+    margin: 0;
+}
+
+.copyright_row a {
+    padding: 5px 7px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright_row a:hover {
+    padding: 5px 7px;
+    background-color: rgb(151, 12, 17);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+
+@font-face {
     src: url("./Assets/fonts/Yekan.ttf");
     font-family: yekan;
 }
 
-@font-face{
+@font-face {
     src: url("./Assets/fonts/IRAN\ Sans\ Regular.ttf");
     font-family: iranSans;
 }
 
-
 @font-face {
     font-family: 'icomoon';
-    src:  url('./Assets/fonts/icomoon/fonts/icomoon.eot?p9iue7');
-    src:  url('./Assets/fonts/icomoon/fonts/icomoon.eot?p9iue7#iefix') format('embedded-opentype'),
-      url('./Assets/fonts/icomoon/fonts/icomoon.ttf?p9iue7') format('truetype'),
-      url('./Assets/fonts/icomoon/fonts/icomoon.woff?p9iue7') format('woff'),
-      url('./Assets/fonts/icomoon/fonts/icomoon.svg?p9iue7#icomoon') format('svg');
+    src: url('./Assets/fonts/icomoon/fonts/icomoon.eot?4d7aac');
+    src: url('./Assets/fonts/icomoon/fonts/icomoon.eot?4d7aac#iefix') format('embedded-opentype'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.ttf?4d7aac') format('truetype'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.woff?4d7aac') format('woff'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.svg?4d7aac#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
@@ -369,25 +670,89 @@ width: 65px;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-google-plus:before {
+}
+
+.icon-line-chart:before {
+    content: "\e900";
+}
+
+.icon-bargraph:before {
+    content: "\e902";
+}
+
+.icon-trophy:before {
+    content: "\e901";
+}
+
+.icon-google-plus:before {
     content: "\ea8b";
-  }
-  .icon-facebook:before {
+}
+
+.icon-facebook:before {
     content: "\ea90";
-  }
-  .icon-instagram:before {
+}
+
+.icon-instagram:before {
     content: "\ea92";
-  }
-  .icon-twitter:before {
+}
+
+.icon-twitter:before {
     content: "\ea96";
-  }
-  .icon-linkedin2:before {
+}
+
+.icon-linkedin2:before {
     content: "\eaca";
-  }
-  
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./Assets/fonts/icomoon/fonts/icomoon.eot?p9iue7');
+    src: url('./Assets/fonts/icomoon/fonts/icomoon.eot?p9iue7#iefix') format('embedded-opentype'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.ttf?p9iue7') format('truetype'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.woff?p9iue7') format('woff'),
+        url('./Assets/fonts/icomoon/fonts/icomoon.svg?p9iue7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+    content: "\ea8b";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-linkedin2:before {
+    content: "\eaca";
+}
