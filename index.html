@@ -14,11 +14,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>شرکت آکام آتا</title>
 </head>
-
 <body>
+
+
   <div class="container-fluid">
-    <div class="row info_header_row d-flex justify-content-center">
-      <div class="col-7 d-flex align-items-center ">
+    <div class="row info_header_row d-flex  justify-content-center w-100">
+      <div class="col-7 d-none d-xl-flex align-items-center ">
         <p class="my-2">
           <i class="fas fa-clock"></i>
           ساعات کاری: شنبه تا چهارشنبه ۹ - ۱۸
@@ -34,7 +35,7 @@
           پشتیبانی 090256654632
         </p>
       </div>
-      <div class="col-3 info_icons_container  d-flex justify-content-center align-items-center">
+      <div class="col-7 col-lg-3 info_icons_container d-flex justify-content-center align-items-center">
         <a href="">
           <img class="engLangIcon"
             src="https://akam-ata.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="" srcset="">
@@ -55,12 +56,44 @@
       </div>
     </div>
 
-    <div class="row d-flex justify-content-center navbar-row">
+    <div class="row w-100 d-flex justify-content-center navbar-row">
       <div class="col-10">
         <div class="row d-flex align-items-center navbar_inner_row">
-          <div class="col-1"><img src="./Assets/images/logo.png" alt="" srcset=""></div>
-          <div class="col-8">
-            <ul class="d-flex navbar_ul">
+          <div class="col-2 col-lg-1">
+            <img src="./Assets/images/logo.png" alt="" srcset="">
+          </div>
+          <div class="col-2 col-lg-8  order-3 order-lg-2">
+
+
+
+            <button id="burger" class="open-main-nav d-block d-lg-none">
+              <span class="burger"></span>
+              <span class="burger-text">Menu</span>
+            </button>
+
+
+
+            <nav class="main-nav" id="main-nav">
+              <ul>
+                <li>
+                  <a href="#">خدمات شرکت</a>
+                </li>
+                <li>
+                  <a href="#">مشاوره مدیریت</a>
+                </li>
+                <li>
+                  <a href="#">تعرفه خدمات و محصولات</a>
+                </li>
+                <li>
+                  <a href="#">مجله کسب و کار</a>
+                </li>
+                <li>
+                  <a href="#">همکاری با ما</a>
+                </li>
+
+              </ul>
+            </nav>
+            <ul class="d-none d-lg-flex  navbar_ul">
               <li class="navbar_parent_li">خانه
 
               </li>
@@ -143,7 +176,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-8 col-lg-3 order-2 order-lg-3">
             <input class="search_input" type="text" placeholder="جست و جو">
           </div>
         </div>
@@ -151,17 +184,15 @@
     </div>
 
 
-    <div class="row slidshow_row d-flex justify-content-center flex-column align-items-center">
-      <div class="slidshow_img_col col-7 d-flex justify-content-center">
-        <div data-aos="zoom-in-down" data-aos-delay="200" data-aos-duration="1200">
-          <img class="slidshow_img" src="http://akam-ata.com/wp-content/uploads/2020/05/laptop5_3.png" alt="" srcset="">
-        </div>
+    <div class="row slidshow_row ">
+      
+      <div class="slidshow_img_col col-12" data-aos="zoom-in-down" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
       </div>
-      <div class="slidshow_description_col col-4 d-flex justify-content-center align-items-center ">
-        <div  data-aos="zoom-out" data-aos-delay="900" data-aos-duration="1200">
+    
+      <div class="slidshow_description_col col-xs-10 col-md-12 d-flex justify-content-center align-items-center ">
+        <div  data-aos="zoom-out" data-aos-delay="900" data-aos-duration="1200" data-aos-once="true">
           <h1 class="slidshow_text_one">شرکت آکام آتا ( سهامی خاص ) </h1>
           <p class="slidshow_text_two">شرکت مشاوره مدیریت، مشاوره فروش و بازاریابی، دیجیتال مارکتینگ</p>
-          
         </div>
         <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1500"
           data-aos-duration="1200">
@@ -173,7 +204,7 @@
         </div>
       </div>
     </div>
-    <div class="row about_container_row d-flex align-items-center justify-content-center">
+    <div class="row about_container_row d-flex align-items-center justify-content-center px-2 py-4">
       <div class="col-10 d-flex flex-column align-items-center justify-content-center">
         <div data-aos="fade-down" data-aos-once="true">
         <p class="plan_first_text ">شرکت مارکتینگ مشاوره مدیریت</p>
@@ -188,7 +219,7 @@
     </div>
       <div class="col-12 ">
         <div class="row">
-          <div class="col-xs-8  col-md-6 col-xl-3 p-3 about_card ">
+          <div class="col-xs-12  col-md-6 col-xl-3 p-3 about_card ">
             <div data-aos="zoom-in-left"data-aos-duration="1000" data-aos-once="true">
             <div class="d-flex align-items-start justify-content-center flex-column  p-4 inner_about_card_one">
               <img
@@ -200,7 +231,7 @@
             </div>
           </div>
         </div>
-          <div class="col-xs-8  col-md-6 col-xl-3 p-3 about_card ">
+          <div class="col-xs-10  col-md-6 col-xl-3 p-3 about_card ">
             <div data-aos="zoom-in-left"data-aos-duration="1000" data-aos-once="true">
             <div class="inner_about_card d-flex align-items-start justify-content-center flex-column  p-4">
               <img
@@ -212,7 +243,7 @@
             </div>
           </div>
         </div>
-          <div class="col-xs-8  col-md-6 col-xl-3 p-3 about_card ">
+          <div class="col-xs-10  col-md-6 col-xl-3 p-3 about_card ">
             <div data-aos="zoom-in-left"data-aos-duration="1000" data-aos-once="true">
             <div class="inner_about_card d-flex align-items-start justify-content-center flex-column  p-4">
               <img
@@ -224,7 +255,7 @@
             </div>
           </div>
           </div>
-          <div class="col-xs-8  col-md-6 col-xl-3 p-3 about_card ">
+          <div class="col-xs-10  col-md-6 col-xl-3 p-3 about_card ">
             <div data-aos="zoom-in-left"data-aos-duration="1000" data-aos-once="true">
             <div class="inner_about_card d-flex align-items-start justify-content-center flex-column  p-4">
               <img
@@ -479,7 +510,7 @@
       </div>
     </div>
 
-    <div class="row footer_container_row d-flex align-items-center justify-content-center">
+    <div class="row footer_container_row d-none d-md-flex align-items-center justify-content-center">
       <div class="col-10">
         <div class="row footer_row_one">
           <div class="col-3 d-flex flex-column align-items-start">
