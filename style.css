@@ -173,7 +173,11 @@ body {
 .slideshow_div {}
 
 .slideshow_button_one {
-    padding: 9px 50px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(151, 12, 17);
     color: white;
     border-radius: 25px;
@@ -190,7 +194,11 @@ body {
 }
 
 .slideshow_button_two {
-    padding: 10px 50px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: black;
     border-radius: 25px;
@@ -336,7 +344,7 @@ margin-bottom: 20px;
 
 .plans_container {
     background-color: #F2F2F2;
-    padding: 60px;
+    padding: 60px 0px;
 }
 
 .plan_first_text {
@@ -887,8 +895,9 @@ box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
 .open-main-nav {
 	position: relative;
 	top: 7px;
-	padding-top: 20px;
-	right: 15px;
+    padding-top: 20px;
+   
+	right: 5px;
 	z-index: 1000;
 	background: none;
 	border: 0;
