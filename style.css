@@ -77,9 +77,17 @@ body {
 .navbar_parent_li:hover ul {
     visibility: visible;
     opacity: 1 !important;
+   
 }
 .navbar_parent_li{
     cursor: pointer;
+    border: 2px solid #302F3D;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.navbar_parent_li:hover{
+    border-bottom: 2px solid rgb(151, 12, 17);
+    background-color: #41414d;
 }
 .navbar_parent_li ul {
 
@@ -572,7 +580,7 @@ box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-right: 25px;
+    padding: 0;
 }
 
 .footer_two_ul li {
