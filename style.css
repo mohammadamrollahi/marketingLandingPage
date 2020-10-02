@@ -414,9 +414,11 @@ margin-bottom: 20px;
     background-color: rgb(151, 12, 17);
     color: white;
     border-radius: 25px;
-
 }
-
+.order_link:hover{
+    color: white;
+    text-decoration: none;
+}
 .order_text {
     font-size: 17pt;
     color: white;
@@ -518,9 +520,7 @@ margin-bottom: 20px;
     height: 100%;
     top: 80%;
     transition: 0.5s;
-    -webkit-box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
--moz-box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
-box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
+    background-color: rgba(0,0,0,0.5);
 }
 .swiper_slides_filterdiv:hover
 {
@@ -538,7 +538,7 @@ box-shadow: inset 0px 0px 86px 97px rgba(212,212,212,0.41);
     padding-top: 10px;
 }
 .swiper_slides_filterdiv_text{
-    color: black;
+    color: white;
     text-align: start;
 }
 .footer_container_row {
