@@ -60,6 +60,7 @@ body {
     position: fixed;
     z-index: 10;
     top:35px;
+    transition: 0.4s ease-out;
 }
 
 .navbar_ul {
@@ -81,13 +82,13 @@ body {
 }
 .navbar_parent_li{
     cursor: pointer;
-    border: 2px solid #302F3D;
+    border: 2px solid transparent;
     transition: 0.4s;
     border-radius: 10px;
 }
 .navbar_parent_li:hover{
     border-bottom: 2px solid rgb(151, 12, 17);
-    background-color: #41414d;
+
 }
 .navbar_parent_li ul {
 
@@ -108,8 +109,7 @@ body {
 }
 
 .navbar_inner_row {
-    height: 100px;
-    background-color: #302F3D;
+    height: 80px;
 }
 
 .search_input {
@@ -372,8 +372,8 @@ margin-bottom: 20px;
 }
 
 .plan_cards_text_one {
-    font-size: 14pt;
-    margin: 15px 0px;
+    font-size: 16pt;
+    margin: 35px 0 10px 0px;
 
 }
 
@@ -544,7 +544,7 @@ margin-bottom: 20px;
 .footer_container_row {
     background-color: #302F3D;
     color: white;
-    padding: 70px 0 20px 0;
+    padding: 70px 0 0 0;
 }
 
 .footer_row_one p {
@@ -664,7 +664,9 @@ margin-bottom: 20px;
     text-decoration: none;
 
 }
-
+.footer_logo{
+    width: 50px;
+}
 @font-face {
     src: url("./Assets/fonts/Yekan.ttf");
     font-family: yekan;

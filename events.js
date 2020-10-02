@@ -1,3 +1,18 @@
+
+window.onscroll=function(){myScrollFunc()};
+function myScrollFunc()
+{
+   if( document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)
+   {
+       document.getElementById("navbar-row").style.backgroundColor="rgb(151, 12, 17)";
+
+   }
+   else
+   {
+    document.getElementById("navbar-row").style.backgroundColor="#302F3D";
+  }
+}
+
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -59,3 +74,8 @@ window.addEventListener('load', function(e) {
 		}, 3500);
 	}, 5500);
 });
+
+
+
+
+
